@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="ASSETS/icons8-form-50 (2).png">
+    <style>
+        body {
+            background-color: #9BB0C1;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            font-style: italic;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 5px;
+            transform: scale(1.2);
+        }
+
+        .gender-label {
+            margin-right: 15px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 200px;
+            height: 12.5rem;
+
+        }
+
+        select[name="blood_group"],
+        select[name="phone_code"] {
+            width: calc(50% - 4px);
+        }
+
+        input[name="phone_number"] {
+            margin-left: 1px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Registration Form</h1>
+        <br>
+        <img src="ASSETS/registration.png" height="250" width="300" alt="icon">
+        <form>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="Password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" placeholder="YYYY-MM-DD" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Blood Group:</td>
+                    <td>
+                        <select name="blood_group">
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label class="gender-label"><input type="radio" name="gender" value="male"> Male</label>
+                        <label class="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+                        <label class="gender-label"><input type="radio" name="gender" value="other"> Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email Id:</td>
+                    <td><input type="email" placeholder="Email Id" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" placeholder="Address" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>
+                        <select name="phone_code">
+                            <option>+91</option>
+                        </select>
+                        <input type="tel" placeholder="1234******" name="phone_number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Details filled ?</td>
+                    <td><input type="checkbox" name="details_filled"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">Already a user? <a href="index.html">Login here</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">Don't forget to give your <a href="index-f.html">Feedback!</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

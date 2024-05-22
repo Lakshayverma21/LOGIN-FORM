@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="ASSETS/icons8-feedback-form-68.png">
+    <style>
+        
+        body {
+            background-color: #9BB0C1;
+        }
+
+        input[type="Submit"]{
+            cursor: pointer;
+        }
+
+        h1 {
+            font-style: oblique;
+        }
+
+        .feedback
+        {
+            height: 70%;
+            width:  40%;
+            margin-left: 30%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="submit"] {
+            background-color: #2f7833;
+            color: aliceblue;
+            border: none;
+            padding: 10px;
+            border-radius: 3rem;
+            width: 5.5rem;
+            height:  2.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <div class="feedback">
+    <center>
+        <h1>Feedback :></h1>
+        <img src="ASSETS/feedback.png" alt="" height="250px">
+        <br>
+        <br>
+        <tr>
+            <td>
+                <form action="mailto:verma21lakshay@gmail.com" method="post" enctype="text/plain">
+                    <textarea name="Message" placeholder="Feedback" rows="12" cols="60"></textarea>
+                    <br>
+                    <input type="Submit" value="Submit" name="">
+                </form>
+            </td>
+        </tr>
+    </center>
+    <br>
+    </div>
+</body>
+</html>
